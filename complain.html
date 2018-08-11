@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--引入flexible-->
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入重置css样式-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--引入字体图标-->
+		<link rel="stylesheet" type="text/css" href="css/fonticon/iconfont.css" />
+		<!--引入通用 css-->
+		<link rel="stylesheet" href="css/all.css">
+<style type="text/css">
+	body {
+		background-color: #efefef;
+	}
+	.top {
+		color: #333;
+		padding: 0 0.2rem;
+		font-size: 0.3rem;
+		line-height: 0.6rem;
+	}
+	.lists {
+		width: 100%;
+		font-size: 0.3rem;
+		background-color: #fff;
+	}
+	.lists	ul {
+		width: 100%;
+	}
+	.lists	ul li {
+		width: 100%;
+		padding: 0.2rem;
+		color: #000;
+		border-bottom: 0.01rem solid #efefef;
+	}	
+	.lists	ul li  i {
+		float: right;
+		font-size: 0.3rem;
+	}
+	.outlink {
+		color: #72ACE3;
+		line-height: 0.6rem;
+		padding-left: 0.2rem;
+		font-size: 0.24rem;
+	}
+	.outlinkd {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		color: #72ACE3;
+		line-height: 0.6rem;
+	}
+</style>
+		<title>投诉</title>
+	</head>
+
+	<body>
+		<p class="top">请选择投诉该网页的原因：</p>
+		<div class="lists">
+			<ul>
+				<li>网页包含欺诈信息（如：假红包）<i class="iconfont" style="float: right;">&#xe912;</i></li>
+				<li>网页包含色情信息<i class="iconfont" style="float: right;">&#xe912;</i></li>
+				<li>网页包含暴力恐怖信息<i class="iconfont" style="float: right;">&#xe912;</i></li>
+				<li>网页包含政治敏感信息<i class="iconfont" style="float: right;">&#xe912;</i></li>
+				<li>网页在收集个人隐私信息（如：钓鱼链接）<i class="iconfont" style="float: right;">&#xe912;</i></li>
+				<li>网页包含诱导分享/关注性质的内容<i class="iconfont" style="float: right;">&#xe912;</i></li>
+				<li>网页可能包含造谣信息<i class="iconfont" style="float: right;">&#xe912;</i></li>
+				<li>网页包含赌博信息<i class="iconfont" style="float: right;">&#xe912;</i></li>
+			</ul>
+		</div>
+		<a href="https://mp.weixin.qq.com/s/TbX1CcZhQNReneXVc3At9Q" class="outlink">遇到网页浏览被劫持怎么办</a>
+
+		<a href="https://weixin110.qq.com/security/readtemplate?t=w_security_center_website/report_agreement&lang=zh_CN"class="outlinkd">投诉须知</a>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+	<script src="js/baseCode16.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/utiltool.js" type="text/javascript" charset="utf-8"></script>
+	<!--引入通用js-->
+	<script src="js/all.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".lists").on("click","li",function(){
+				window.location.href = "complainto.html"
+			})
+	})
+	</script>
+
+</html>

@@ -1,0 +1,106 @@
+.videocov {
+  width: 100%;
+  height: 3.7rem;
+  position: relative;
+}
+.videocov .vicover {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+.videocov .vicover i {
+  margin: 1.3rem auto;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+}
+.tophost {
+  padding: 0.2rem;
+}
+.tophost .topin {
+  width: 100%;
+  background-color: #fff;
+}
+.tophost .topin .topint {
+  width: 100%;
+  height: 0.88rem;
+  position: relative;
+}
+.tophost .topin .topint img {
+  width: 100%;
+  height: 100%;
+}
+.tophost .topin .topint h2 {
+  line-height: 0.88rem;
+  padding-left: 0.2rem;
+  font-size: 0.36rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.tophost .topin .topinm {
+  padding: 0.3rem 0.2rem;
+  font-size: 0.3rem;
+}
+.tophost .topin .topinm p {
+  font-size: 0.3rem;
+  letter-spacing: 0.01rem;
+}
+.tophost .topin .topinb {
+  padding: 0 0.2rem 0.5rem;
+}
+.tophost .topin .topinb div {
+  font-size: 0.36rem;
+  line-height: 0.6rem;
+  border-bottom: 0.01rem solid #dcdcdc;
+  margin-bottom: 0.1rem;
+}
+.tophost .topin .topinb p {
+  font-size: 0.3rem;
+}
+.tophost .topin .topintip {
+  text-align: center;
+  color: #f88b6c;
+  font-size: 0.24rem;
+  padding: 0.3rem 0;
+}
+.bbann {
+  width: 100%;
+  padding: 0.3rem 0.2rem;
+  margin-bottom: 1rem;
+}
+.bbann .bbannin {
+  width: 100%;
+  height: 0.88rem;
+  position: relative;
+}
+.bbann .bbannin img {
+  width: 100%;
+  height: 100%;
+}
+.bbann .bbannin h2 {
+  line-height: 0.88rem;
+  font-size: 0.36rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  color: #cb15c6;
+  text-align: center;
+  width: 100%;
+  font-weight: normal;
+}
+.bbann .bbannin h2:before {
+  content: attr(text);
+  position: absolute;
+  z-index: 10;
+  color: #ab3be5;
+  -webkit-mask: linear-gradient(to left, red, transparent);
+}

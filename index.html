@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--引入flexible-->
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入重置css样式-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--引入字体图标-->
+		<link rel="stylesheet" type="text/css" href="css/fonticon/iconfont.css" />
+		<!--引入jq和jqmobile-->
+		<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">-->
+		<!--引入swiper css-->
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<!--引入通用 css-->
+		<link rel="stylesheet" href="css/all.css">
+		<!--引入页面css-->
+		<link rel="stylesheet" href="css/index.css">
+
+		<title></title>
+	</head>
+
+	<body>
+		<div data-role='page'>
+			<div class="top_banner setcolor">
+				<p><i class="iconfont">&#xe628;</i>本技术由秦皇岛恒硕信息技术有限公司本技术由秦皇岛恒硕信息技术有限公司</p>
+			</div>
+			<a href="javascript:;" class="kefu">
+				<i class="iconfont">&#xe666;</i>
+			</a>
+			<button class="back_to_top">
+				<i class="iconfont">&#xe605;</i></button>
+			<div class="swiper-container swiper-container1" style="height: 2.84rem;">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"  id = "myframe1" >
+						 <iframe height="100%"   id = "myframe" width="100%"src='http://player.youku.com/embed/XMzYzMzA0MDE3Ng==' frameborder=0 'allowfullscreen'></iframe>
+						
+					</div>
+					<div class="swiper-slide"><img src="images/indexbanner1.png"/></div>
+					<div class="swiper-slide"><img src="images/indexbanner2.png"/></div>
+				</div>
+				<div class="swiper-button-prev"></div><!--左箭头-->
+  		  <div class="swiper-button-next"></div><!--右箭头-->
+				<!-- Add Pagination -->
+				<div class="swiper-pagination swiper-pagination1"></div>
+			</div>
+			<div class="title">
+				<h1>全国IT行业最美程序员评选活动</h1>
+			</div>
+			<!--统计开始-->
+			<div class="count">
+				<div class="count_t clearfix setcolor">
+					<div class="count_in ">
+						<p>939</p>
+						<p>参与人数</p>
+					</div>
+					<div class="count_in ">
+						<p>939</p>
+						<p>累积票数</p>
+					</div>
+					<div class="count_in ">
+						<p>939</p>
+						<p>访问次数</p>
+					</div>
+				</div>
+				<div class="count_b">
+					<p>活动已结束</p>
+				</div>
+			</div>
+			<!--统计结束-->
+
+			<!--按钮开始-->
+			<div class="join">
+				<a href="signup.html" class="joinin setcolor">
+					在线报名
+				</a>
+				<div class="joinin erweima setcolor">
+					关注公众号
+				</div>
+			</div>
+			<!--按钮结束-->
+			<!--规则开始-->
+			<div class="lists">
+				<div class="listsin">
+					<div class="list">
+						<i class="iconfont" style="color: #444;">&#xe601;</i>活动开始：2018-01-05 16:42:30
+					</div>
+					<div class="list">
+						<i class="iconfont" style="color: #444;">&#xe812;</i>活动截止：2018-01-05 16:42:30
+					</div>
+					<div class="list listmore">
+						<a href="details.html">
+						活动详情<i class="iconfont">&#xe65b;</i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--规则结束-->
+			<!--搜索开始-->
+			<div class="search">
+				<div class="searchin">
+					<input type="text" id="search" value="" placeholder="搜索编号：选手" />
+					<div class="ser setcolor"><i class="iconfont" style="color: #fff;">&#xe633;</i>搜索</div>
+				</div>
+			</div>
+			<!--搜索结束-->
+			<!--列表开始-->
+			<div id="container" style="display: none;">
+				<ul class="col">
+					<li>
+						<a href="ppldetal.html?id=01">
+							<span class="ordernum">01号</span>
+							<img src="images/image1.png"/>
+							<h3>陈晨</h3>
+						</a>
+							<div class="buttons clearfix">
+								<a href="javascript:;" style="float: left;" class="givetic setcolor">投票</a>
+								<a href="javascript:;"style="float: right;" class="givegif setcolor">送礼</a>
+							</div>
+							<div class="allnumber">
+								23451票
+							</div>
+					</li>
+				</ul>
+				<ul class="col">
+
+				</ul>
+			</div>
+
+			<!--列表结束-->
+			<div data-role="footer" class="footernav setcolor">
+				<ul>
+					<li>
+						<a href="index.html">
+							<div class="icon">
+								<img src="images/home_act.png" />
+							</div>
+							<div class="iconw">
+								首页
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="host.html">
+							<div class="icon">
+								<img src="images/company.png" />
+							</div>
+							<div class="iconw">
+								主办方
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="details.html">
+							<div class="icon">
+								<img src="images/list.png" />
+							</div>
+							<div class="iconw">
+								详情
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="vote.html">
+							<div class="icon">
+								<img src="images/god.png" />
+							</div>
+							<div class="iconw">
+								排名
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+			<!--礼物弹窗-->
+			<div class="giftwind" style="left: 100%;">
+				<div class="giftwindin">
+					<h4>送礼物为ta+票吧！<i class="iconfont closegif">&#xe62f;</i></h4>
+					  <div class="swiper-container swiper-container2">
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide">
+					      	<img src="images/gift1.png"/>
+					      	<h5>小星星</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift2.png"/>
+					      	<h5>玫瑰花</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift3.png"/>
+					      	<h5>棒棒糖</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift4.png"/>
+					      	<h5>亲吻</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift5.png"/>
+					      	<h5>爱心</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift6.png"/>
+					      	<h5>蛋糕</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift7.png"/>
+					      	<h5>红包</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift8.png"/>
+					      	<h5>心动</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift9.png"/>
+					      	<h5>鸡尾酒</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift10.png"/>
+					      	<h5>弓箭</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift11.png"/>
+					      	<h5>穿心箭</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift12.png"/>
+					      	<h5>兰博基尼</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift13.png"/>
+					      	<h5>法拉利</h5>
+					      	<p>+10票</p>
+					      </div>
+					      <div class="swiper-slide">
+					      	<img src="images/gift14.png"/>
+					      	<h5>助力火箭</h5>
+					      	<p>+10票</p>
+					      </div>
+					    </div> 
+					    <!-- Add Pagination -->
+					    <!--<div class="swiper-pagination swiper-pagination2"></div>-->
+					  </div>
+					<div class="givenum">
+						<span class="number">数量</span>
+								<div class="con">
+											<div class="room-number">
+												<p class="clearfix">
+													<span class="bd-box subtraction min">-</span>
+													<input class="number-box" id="number-box" value="1" readonly="readonly"/>
+													<span class="bd-box addition add">+</span>
+												</p>
+											</div>
+											<span>¥<span class="giftPress">200</span></span>
+											<span>+<span class="giftNumber">2000</span>票</span>
+								</div>
+						<button class="setcolor">赠送</button>
+					</div>
+				</div>
+			</div>
+			<!--礼物弹窗end-->
+			<!--投票弹窗-->
+			<div class="titwind titwind1" style="left: 100%;">
+				<div class="titwindin titone ">
+					<img src="images/titgift.png" alt="" />
+					<div class="tit">
+						感谢投票，么么哒！
+					</div>
+					<div class="titcom">
+						<div class="titcomsure">
+								确定
+						</div>
+					</div>
+				</div>
+				<div class="titwindin tittwo" style="padding-top: 1rem;">
+					<div class="tit">
+						请输入验证码,给喜爱的人投票吧!
+			<input type = "text" id = "input" placeholder="请输入验证码" style="color: #000;width: 2.2rem;height: 0.5rem;padding: 0 0.1rem;margin: 0.2rem 0.2rem 0 0;"/>
+			<div class="codeout" style="width: 1.5rem;display: inline-block;height: 0.5rem;background-color: black;letter-spacing: 0.05rem;">
+				<input type = "button" id="code" style="color: #000;width: 1.2rem;height: 0.5rem;   transform: skewX(-12deg) rotate(7deg) scale(1.2);background-color: rgba(0,0,0,0);color: red;"/>
+
+			</div>
+							<div class="codetite" style="display: none; padding-top: 0.1rem;">
+					
+				</div>
+					</div>
+					<div class="titcom">
+						<div class="titconsole">取消</div>
+						<div class="titsure">确认</div>
+					</div>
+				</div>
+			</div>
+			<!--投票弹窗end-->
+			<!--关注公众号-->
+			<div class="titwind  titwind2" style="left: 100%;">
+				<div class="titwindin titthree ">
+					<div class="tit">
+						微信公众号
+					</div>
+					<img class="erweimaimg" src="images/erweima.png" alt="" />
+					<i class="iconfont closeimg">&#xe62b;</i>
+					<div class="tip">
+						长按二维码识别关注<br />
+						了解更多活动信息
+					</div>
+					<div class="titcom">
+						<div class="titcomsure">
+								确定
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--关注公众号end-->
+
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<!--<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>-->
+	<!--<script src="js/baseCode16.js" type="text/javascript" charset="utf-8"></script>-->
+	<!--<script src="js/utiltool.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="js/swiper.min.js"></script>
+	<!--引入通用js-->
+	<script src="js/all.js"></script>
+	<script type="text/javascript">
+		$(function() {
+
+			/*轮播*/
+			var myswiper = new Swiper('.swiper-container1', {
+				pagination: {
+					el: '.swiper-pagination1',
+				},
+				 navigation: {
+			    nextEl: '.swiper-button-next',
+			    prevEl: '.swiper-button-prev',
+			  },
+				autoplay: {
+					delay: 5000,
+					stopOnLastSlide: false,
+					disableOnInteraction: false,
+				}
+			})
+ 
+/*IframeOnClick.track(document.getElementById("myframe"), function() { 
+		$("#myframe1").html("<iframe height=100%   id = myframe width=100% src='http://player.youku.com/embed/XMzYzMzA0MDE3Ng==?rel=0&amp;autoplay=1' frameborder=0 'allowfullscreen'></iframe>")
+
+});*/
+		
+			/*轮播end*/
+			/*瀑布流*/
+			//url data function dataType
+			function loadMeinv() {
+				/*ajax请求数据*/
+				var par = {};
+//	      par.pageNo = base16Str("1");
+//	      par.pageSize = base16Str("10");
+	      zhengzhuan_type()
+		    function zhengzhuan_type() {
+		        var par={};
+//		        par.names=base16Str("癌症知识分类");
+		        $.ajax({
+		            type : "post",
+		            url : routeURL.captchaphone,
+		            data : par,
+		            success : function(data){
+		                var data = eval("("+data+")")
+		                if(data.status==0){
+		                    var length = data.list.length;
+		                    var zhishiku_list =  $(".zhishiku_list").children("li");
+		                    for(var i=0;i<length;i++) {
+		                        var CLASSID = data.list[i].CLASSID
+		                        var CLASSNAME = data.list[i].CLASSNAME
+		                        var $_this = $(zhishiku_list[i])
+		                        var $_href = $_this.find("a").attr("href")+'?class='+CLASSID
+		                        $_this.find("a").attr("href",$_href)
+		                        $_this.find("span").text(CLASSNAME)
+		                    }
+		                }
+		            },
+		            error:function(data){
+		            }
+		        });
+		    }
+		  	/*ajax*/
+				var data = 0;
+				for(var i = 0; i < 3; i++) { //每次加载时模拟随机加载图片
+					data = parseInt(Math.random() * 3+1);
+					var html = "";
+					html ='<li><a href="ppldetal.html?id=01">'+
+						'<span class="ordernum">01号</span>'+
+						'<img src="images/image'+data+'.png"/>'+
+						'<h3>陈晨</h3></a>'+
+						'<div class="buttons clearfix">'+
+							'<a href="javascript:;" style="float: left;" class=" setcolor">投票</a>'+
+							'<a href="javascript:;" style="float: right;" class=" setcolor">送礼</a>'+
+						'</div>'+
+						'<div class="allnumber">'+
+							'23451票'+
+						'</div>'+
+					'</li>'
+					$minUl = getMinUl();
+					$minUl.append(html);
+				}
+			}
+			loadMeinv();
+			$("#container").css("display","block")
+			$(window).on("scroll", function() {
+				$minUl = getMinUl();
+				if($minUl.height() <= $(window).scrollTop() + $(window).height()) {
+					//当最短的ul的高度比窗口滚出去的高度+浏览器高度大时加载新图片
+					loadMeinv();
+				}
+			})
+			function getMinUl() { //每次获取最短的ul,将图片放到其后
+				var $arrUl = $("#container .col");
+				var $minUl = $arrUl.eq(0);
+				$arrUl.each(function(index, elem) {
+					if($(elem).height() < $minUl.height()) {
+						$minUl = $(elem);
+					}
+				});
+				return $minUl;
+			}
+			/*瀑布流end*/
+			
+/*礼物轮播*/
+$(".closegif").on("click",function(){
+	$(".giftwind").css("left","100%")
+	$('.giftwindin').find(".active").each(function(){
+		$(this).removeClass("active")
+	})
+	$("#number").val("")
+})
+$("#container").on("click",".givegif",function(){
+	$(".giftwind").css("left","0")
+})
+
+    var swiper2 = new Swiper('.swiper-container2', {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 0,
+      pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+      }
+    });
+    $('.swiper-container2').on("click",".swiper-slide",function(){
+    	$(this).addClass("active").siblings().removeClass("active")
+    	$("#number-box").val("1")  //重置数量为1
+    	countPrice ()
+    })
+ $(".addition").on("click",function () {
+ 	var nowNumber= parseInt($("#number-box").val())+1;
+ 	$("#number-box").val(nowNumber) 
+ 	countPrice ()
+ })
+ $(".subtraction").on("click",function () {
+ 	var nowNumber=  parseInt($("#number-box").val())-1;
+ 	if(nowNumber<=0){
+ 		nowNumber =1
+ 	}
+ 	$("#number-box").val(nowNumber) 
+ 	countPrice ()
+ })
+    
+    function countPrice () {
+    	//获取数量
+    	var nowNumber= $("#number-box").val();
+    	//获取选中礼物的价格和票数
+    	var giftPrice = $('.swiper-container2').find(".active").attr("price")
+    	var giftCount = $('.swiper-container2').find(".active").attr("count")
+    	$(".giftPress").text(nowNumber*giftPrice)
+    	$(".giftNumber").text(nowNumber*giftCount)
+    }
+    
+/*礼物轮播end*/
+/*点赞*/
+
+
+	/*点击投票显示*/
+$("#container").on("click",".givetic",function(){
+	$(".titwind1").css("left","0")
+	createCode()
+})
+	/*点击取消隐藏*/
+$(".titconsole").on("click",function(){
+			$(".titwind1").css("left","100%")
+})
+ 	 /*点击确认 提示成功*/
+$(".titsure").on("click",function(){
+	if(validate()){
+		$(".titone").addClass("okde1")
+		$(".tittwo").addClass("okde2")
+		$(".codetite").text("").hide()
+	}
+	
+})
+$("#code").on("click",function(){
+createCode()
+})
+	/*点击确认重置*/
+$(".titcomsure").on("click",function(){
+	$(".titwind").css("left","100%")
+	$(".titone").removeClass("okde1")
+	$(".tittwo").removeClass("okde2")
+})
+var code ; //在全局定义验证码 
+			//产生验证码
+			function createCode(){
+				 code = ""; 
+				 var codeLength = 4;//验证码的长度
+				 var checkCode = document.getElementById("code"); 
+				 var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',
+				 'S','T','U','V','W','X','Y','Z');//随机数
+				 for(var i = 0; i < codeLength; i++) {//循环操作
+					var index = Math.floor(Math.random()*36);//取得随机数的索引（0~35）
+					code += random[index];//根据索引取得随机数加到code上
+				}
+				checkCode.value = code;//把code值赋给验证码
+				
+					var rotate = Math.floor(Math.random()*8);//取得随机数的索引（0~7）
+					if(rotate%2=="1"){
+						rotate = -rotate
+					}
+				checkCode.style.transform = "skewX(-12deg) rotate("+rotate+"deg) scale(1.2)"
+			}
+			//校验验证码
+			function validate(){
+				var inputCode = document.getElementById("input").value.toUpperCase(); //取得输入的验证码并转化为大写      
+				if(inputCode.length <= 0) { //若输入的验证码长度为0
+					$(".codetite").text("请输入验证码！").show(); //则弹出请输入验证码
+					return false
+				}       
+				else if(inputCode != code ) { //若输入的验证码与产生的验证码不一致时
+					$(".codetite").text("验证码输入错误！@_@").show(); //则弹出验证码输入错误
+					createCode();//刷新验证码
+					document.getElementById("input").value = "";//清空文本框
+					return false
+				}       
+				else { //输入正确时
+					document.getElementById("input").value = "";//清空文本框
+					$(".codetite").text("输入验证码错误,请重新输入").show()
+					return true
+				}           
+			}
+
+
+/*点赞end*/
+
+/*公众号*/
+$(".erweima").on("click",function(){
+	$(".titwind2").css("left","00%")
+})
+$(".closeimg").on("click",function(){
+	$(".titwind2").css("left","100%")
+})
+
+			/*漂浮物*/
+			function snow(left, top, src) {
+        var img = document.createElement("img");
+        img.className = "roll roll"+ Math.floor(Math.random() * 3 + 3) + "";
+        img.src = src;
+        img.style.width = Math.random()*(1.2-0.6)+0.6 + "rem";
+        img.style.height =  "auto";
+        
+        img.style.left = left + "px";
+        img.style.bottom = "100%";
+        document.getElementsByTagName("body")[0].appendChild(img);
+      setTimeout(function() {
+                    document.getElementsByTagName("body")[0].removeChild(img);
+            // console.log(window.innerHeight); 
+        }, 20000);
+    }
+    setInterval(function() {
+        var left = Math.random() * window.innerWidth;
+        var top =0;
+       // var src = "images/gift" + Math.floor(Math.random() * 6 + 1) + ".png"; 
+       var src = "images/gift2.png";
+        snow(left, top, src);
+    }, 1000);
+
+			/*漂浮物end*/
+			 /*建立新弹窗*/
+function newconfrim (text,console,sure,auto,something) {
+	 var myconfirm = document.createElement("div");
+	 myconfirm.className = "myconfirm"
+	 document.getElementsByTagName("body")[0].appendChild(myconfirm);
+	 if (console&&sure) {
+	 	$(".myconfirm").html("<div class='myconfirmin'><h4></h4><div class='myout'><div class='myoutin myconsole'></div><div class='myoutin mysure'></div></div></div>")
+	  console?$(".myconfirm .myconsole").text(console):$(".myconfirm .myconsole").text("取消")
+	   sure?$(".myconfirm .mysure").text(sure):$(".myconfirm .mysure").text("确定")
+
+	 }else if(sure) {
+	 	$(".myconfirm").html("<div class='myconfirmin'><h4></h4><div class='myout'><div  style='width: 100%;' class='myoutin mysure'></div></div></div>")
+	   sure?$(".myconfirm .mysure").text(sure):$(".myconfirm .mysure").text("确定")
+	 }else{
+	 		$(".myconfirm").html("<div class='myconfirmin'><h4 style='border-radius: 0.1rem;'></h4></div>")
+	 }
+	 	/*设定内容 没有内容默认为是否确定  和设定按钮内容*/
+	  text?$(".myconfirm h4").text(text):$(".myconfirm h4").text("您确定要提交吗？")
+	   /*点取消*/
+	   $(".myconsole").on("click",function(){
+	   	$(".myconfirm").remove()
+	   		alert("已删除弹窗")
+	   })
+	   /*点确认do sometings*/
+	   $(".mysure").on("click",function(){
+	  	 	$(".myconfirm").remove()
+	   		something()
+	   })
+	   if(auto){
+	   		setTimeout(function(){
+	   		$(".myconfirm").remove()
+	   			something()
+	   		},auto*1000)
+	   }
+}
+	//newconfrim ("弹窗内容","取消","确定","自动执行计时s","执行的函数")
+	newconfrim ("弹窗内容","取消","确定","2",function(){
+		console.log("1111")
+	})
+	/*建立新弹窗end*/
+
+		})
+	</script>
+
+</html>

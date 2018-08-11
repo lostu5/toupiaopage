@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--引入flexible-->
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入重置css样式-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--引入字体图标-->
+		<link rel="stylesheet" type="text/css" href="css/fonticon/iconfont.css" />
+		<!--引入通用 css-->
+		<link rel="stylesheet" href="css/all.css">
+		<!--引入页面css-->
+		<link rel="stylesheet" href="css/host.css">
+
+		<title></title>
+	</head>
+
+	<body>
+		<div data-role='page'>
+			<div class="top_banner setcolor">
+				<p><i class="iconfont">&#xe628;</i>本技术由秦皇岛恒硕信息技术有限公司本技术由秦皇岛恒硕信息技术有限公司</p>
+			</div>
+			<a href="javascript:;" class="kefu">
+				<i class="iconfont">&#xe666;</i>
+			</a>
+			<!--回顶部-->
+			<div class="back_to_top" style="display: none;">
+				<i class="iconfont">&#xe605;</i>
+			</div>
+			<!--回顶部end-->
+			<!--视频-->
+			<div class="videocov">
+				<div class="vicover">
+					<i class="iconfont">&#xe768;</i>
+				</div>
+				<video style="width: 100%;height: 3.7rem;"  src="/images/video.mp4"  controls="" x5-playsinline="" playsinline="" webkit-playsinline="" poster="./images/video.png" preload="auto" id="media"></video>
+			</div>
+			
+			<!--视频end-->
+			<!--主办单位-->
+			<div class="tophost">
+				<div class="topin">
+					<div class="topint">
+						<h2>主办单位</h2>
+						<img src="images/hometop.png"/>
+					</div>
+					<div class="topinm">
+						<p>1.主办方：秦皇岛恒硕科技有限公司</p>
+						<p>2.联系地址：秦皇岛开发区淮河道1号弘正大厦</p>
+						<p>3.联系电话：0335-5877001/0335-5388002</p>
+					</div>
+					<div class="topinb">
+						<div>赞助商</div>
+						
+					
+						<p>1.本活动一等奖由XXX公司赞助推出
+</p>
+					</div> 
+					
+					<div class="topintip">
+						本活动最终解释权归活动发起者所有!
+					</div> 
+				</div>
+			</div> 
+			<!--主办单位end-->
+			<!--底部广告-->
+			<div class="bbann">
+				<div class="bbannin">
+					<img src="images/homebott.png"/>
+				</div>
+			</div>
+			<!--底部广告 end-->
+			
+			<!--底部栏-->
+			<div data-role="footer" class="footernav setcolor">
+				<ul>
+					<li>
+						<a href="index.html">
+							<div class="icon">
+								<img src="images/home.png" />
+							</div>
+							<div class="iconw">
+								首页
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="host.html">
+							<div class="icon">
+								<img src="images/company_act.png" />
+							</div>
+							<div class="iconw">
+								主办方
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="details.html">
+							<div class="icon">
+								<img src="images/list.png" />
+							</div>
+							<div class="iconw">
+								详情
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="vote.html">
+							<div class="icon">
+								<img src="images/god.png" />
+							</div>
+							<div class="iconw">
+								排名
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--底部栏end-->
+		</div>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<!--	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>-->
+	<script src="js/baseCode16.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/utiltool.js" type="text/javascript" charset="utf-8"></script>
+	<!--引入通用js-->
+	<script src="js/all.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			/*点击加载更多按钮*/
+			$(".loadmore").on("touchstart",function(){
+				console.log("111")
+				  loadmore ()
+			})
+			function loadmore () {
+				var html = ""
+				/*ajax请求数据*/
+				var par = {};
+	      par.pageNo = base16Str("1");
+	      par.pageSize = base16Str("10");
+	      zhengzhuan_type()
+		    function zhengzhuan_type() {
+		        var par={};
+		        par.names=base16Str("癌症知识分类");
+		        $.ajax({
+		            type : "post",
+		            url : routeURL.captchaphone,
+		            data : par,
+		            success : function(data){
+		                var data = eval("("+data+")")
+		                if(data.status==0){
+		                    var length = data.list.length;
+		                    var zhishiku_list =  $(".zhishiku_list").children("li");
+		                    for(var i=0;i<length;i++) {
+		                        var CLASSID = data.list[i].CLASSID
+		                        var CLASSNAME = data.list[i].CLASSNAME
+		                        var $_this = $(zhishiku_list[i])
+		                        var $_href = $_this.find("a").attr("href")+'?class='+CLASSID
+		                        $_this.find("a").attr("href",$_href)
+		                        $_this.find("span").text(CLASSNAME)
+		                    }
+		                }
+		            },
+		            error:function(data){
+		            }
+		        });
+		    }
+		  	/*ajax*/
+				for (let i=0;i<9;i++) {
+					let k =i+1
+					html +='<li class="clearfix">'+
+							'<img src="images/vote_list.png"/>'+
+							'<h2>'+k+'号 清小扬</h2>'+
+							'<p>票数：1986514</p>'+
+							'<span>5</span>'+
+					   	'</li>'
+				}
+					$("#ullists").append(html);
+			}
+		
+$(".videocov").on("click",function(){
+		  $("#media")[0].play(); //播放
+
+		})
+
+//视频播放时隐藏poster-img的div
+$("#media").bind("play",function(){
+		$(".vicover").fadeOut(50);
+})
+	})
+	</script>
+
+</html>

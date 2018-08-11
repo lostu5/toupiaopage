@@ -1,0 +1,87 @@
+.tophost {
+  padding: 0.2rem;
+}
+.tophost .topin {
+  width: 100%;
+  background-color: #fff;
+}
+.tophost .topin .topint {
+  width: 100%;
+  height: 0.88rem;
+  position: relative;
+}
+.tophost .topin .topint img {
+  width: 100%;
+  height: 100%;
+}
+.tophost .topin .topint h2 {
+  line-height: 0.88rem;
+  padding-left: 0.2rem;
+  font-size: 0.36rem;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  text-align: center;
+  letter-spacing: 0.01rem;
+}
+.tophost .topin .topinm {
+  padding: 0.3rem 0.2rem;
+  font-size: 0.3rem;
+  line-height: 0.5rem;
+}
+.tophost .topin .topinm p {
+  font-size: 0.3rem;
+  letter-spacing: 0.02rem;
+  color: #444;
+}
+.tophost .topin .topinm p i {
+  padding-right: 0.1rem;
+  font-size: 0.25rem;
+}
+.topinbout {
+  margin-top: 0.2rem;
+  padding: 0.2rem;
+}
+.topinbout .topinb {
+  background-color: #fff;
+  padding: 0.3rem 0.2rem 0.5rem;
+}
+.topinbout .topinb div {
+  font-size: 0.36rem;
+  line-height: 0.6rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+}
+.topinbout .topinb p {
+  font-size: 0.3rem;
+  color: #444;
+  padding: 0.05rem 0;
+}
+.topinbout .topintip {
+  background-color: #fff;
+  text-align: center;
+  color: #f88b6c;
+  font-size: 0.24rem;
+  padding: 0.3rem 0;
+}
+.mark {
+  color: #f66634 !important;
+}
+.bbann {
+  width: 100%;
+  padding: 0.3rem 0.2rem;
+  margin-bottom: 1rem;
+}
+.bbann .bbannin {
+  width: 100%;
+  height: 0.88rem;
+  position: relative;
+}
+.bbann .bbannin img {
+  width: 100%;
+  height: 100%;
+}

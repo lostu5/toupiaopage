@@ -1,0 +1,608 @@
+.swiper-container1 {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  font-size: 0.2rem;
+  text-align: center;
+}
+.count {
+  padding: 0 0.2rem;
+}
+.count .count_t > div {
+  width: 33.33%;
+  position: relative;
+  float: left;
+  text-align: center;
+  height: 1.9rem;
+  padding: 0.4rem 0;
+}
+.count .count_t > div p {
+  color: #fff;
+  font-size: 0.34rem;
+  text-shadow: none;
+  padding-bottom: 0.2rem;
+}
+.count .count_b {
+  text-align: center;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  background-color: #fff;
+  color: #6f6f6f;
+  font-size: 0.34rem;
+}
+.join {
+  padding: 0 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.35rem 0;
+}
+.join .joinin {
+  width: 48%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.35rem;
+  border-radius: 0.05rem;
+  color: #fff;
+  text-align: center;
+}
+.lists {
+  padding: 0 0.2rem;
+}
+.lists .listsin {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.05rem;
+}
+.lists .listsin .list {
+  font-size: 0.3rem;
+  text-align: left;
+  padding: 0 0.45rem;
+  line-height: 0.7rem;
+}
+.lists .listsin .list i {
+  padding-right: 0.1rem;
+  font-size: 0.3rem;
+}
+.lists .listsin .listmore a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  color: #f66634;
+}
+.lists .listsin .listmore i {
+  font-size: 0.3rem;
+  color: #f66634;
+  padding-left: 0.1rem;
+}
+/*搜索开始*/
+.search {
+  padding: 0 0.2rem;
+}
+.search .searchin {
+  width: 100%;
+  height: 0.78rem;
+  position: relative;
+  padding-right: 1.78rem;
+  border-radius: 0.05rem;
+  overflow: hidden;
+  margin: 0.4rem 0;
+}
+.search .searchin > div {
+  border-radius: 0;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+.search .searchin .ser {
+  float: right;
+  width: 1.78rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #fff;
+  height: 0.78rem;
+  line-height: 0.78rem;
+}
+.search .searchin .ser > i {
+  padding-right: 0.1rem;
+  font-size: 0.4rem;
+}
+.search .searchin #search {
+  width: 100%;
+  height: 0.78rem;
+  line-height: 0.78rem;
+  border-radius: 0;
+  padding: 0 0.1rem;
+  font-size: 0.3rem;
+  color: #000;
+}
+/*瀑布流*/
+#container {
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: 0 0.1rem;
+}
+#container ul {
+  width: 50%;
+  list-style: none;
+  float: left;
+  padding: 0 0.1rem;
+}
+#container ul li {
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+#container ul li {
+  background-color: #fff;
+}
+#container ul li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#container ul li .ordernum {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+#container ul li h3 {
+  line-height: 1rem;
+  color: #6f6f6f;
+  font-size: 0.3rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+#container ul li .buttons {
+  padding: 0 0.2rem;
+}
+#container ul li .buttons a {
+  width: 1.4rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.05rem;
+  font-size: 0.3rem;
+}
+#container ul li .allnumber {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #000;
+  font-size: 0.3rem;
+  color: #f66634;
+}
+#container ul li img {
+  width: 100%;
+  height: auto;
+}
+.giftwind {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: auto;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.giftwind .giftwindin {
+  width: 100%;
+  height: 6.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0 0.2rem;
+  background-color: #fff;
+  text-align: center;
+}
+.giftwind .giftwindin h4 {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  border-bottom: 0.01rem solid #efefef;
+  text-align: left;
+  font-size: 0.3rem;
+}
+.giftwind .giftwindin h4 i {
+  float: right;
+  font-size: 0.3rem;
+  padding-right: 0.2rem;
+}
+.giftwind .giftwindin img {
+  width: 1.5rem;
+  height: 1rem;
+}
+.giftwind .giftwindin h5 {
+  font-size: 0.24rem;
+  line-height: 0.6rem;
+}
+.giftwind .giftwindin p {
+  color: #f66635;
+  font-size: 0.2rem;
+}
+.giftwind .giftwindin .givenum {
+  margin-top: 0.3rem;
+  height: 0.65rem;
+  line-height: 0.65rem;
+}
+.giftwind .giftwindin .givenum .number {
+  float: left;
+  padding-right: 0.6rem ;
+  font-size: 0.3rem;
+}
+.giftwind .giftwindin .givenum table {
+  float: left;
+}
+.giftwind .giftwindin .givenum table td {
+  border: 0.01rem solid #efefef;
+  padding: 0rem 0.15rem;
+}
+.giftwind .giftwindin .givenum table td input {
+  width: 0.6rem;
+}
+.giftwind .giftwindin .givenum table .active {
+  background-color: #C9C9C9;
+}
+.giftwind .giftwindin .givenum table .active input {
+  background-color: #C9C9C9;
+  color: #333;
+}
+.giftwind .giftwindin .givenum button {
+  float: right;
+  width: 1.1rem;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  color: #fff;
+  border-radius: 0.06rem;
+}
+.swiper-container2 {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-container2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 0.2rem;
+  padding-bottom: 0.1rem;
+  flex-direction: column;
+}
+.swiper-container2 .active {
+  background-color: #C9C9C9;
+}
+.titwind {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: auto;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.titwind .titwindin {
+  width: 70%;
+  height: 3.8rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0 0.2rem;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 1.5rem;
+  background-color: #232c31;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.titwind .titwindin > img {
+  width: 3.66rem;
+  height: 3.03rem;
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.titwind .titwindin .tit {
+  padding: 0 1rem;
+  line-height: 0.5rem;
+  font-size: 0.24rem;
+}
+.titwind .titwindin .titcom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.7rem;
+  background-color: #fff;
+  color: #232c31;
+  line-height: 0.7rem;
+  font-size: 0.3rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.titwind .titwindin .titcom .titcomsure {
+  color: #232c31;
+  line-height: 0.7rem;
+  font-size: 0.3rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.titwind .titone {
+  transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  /* IE 9 */
+  -moz-transform: rotateY(90deg);
+  /* Firefox */
+  -webkit-transform: rotateY(90deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotateY(90deg);
+  /* Opera */
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.titwind .tittwo .tit {
+  padding: 0;
+  font-size: 0.3rem;
+}
+.titwind .tittwo .titcom div {
+  width: 50%;
+  float: left;
+}
+.titwind .okde1 {
+  transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  /* IE 9 */
+  -moz-transform: rotateY(0deg);
+  /* Firefox */
+  -webkit-transform: rotateY(0deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotateY(0deg);
+  /* Opera */
+}
+.titwind .okde2 {
+  transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  /* IE 9 */
+  -moz-transform: rotateY(90deg);
+  /* Firefox */
+  -webkit-transform: rotateY(90deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotateY(90deg);
+  /* Opera */
+}
+.titwind .titthree {
+  height: 7.9rem;
+  width: 4.8rem;
+  padding-top: 0.5rem;
+  background-color: #fff;
+}
+.titwind .titthree .tit {
+  font-size: 0.36rem;
+  color: #000;
+}
+.titwind .titthree .erweimaimg {
+  position: initial;
+  width: 3.3rem;
+  height: 3.3rem;
+  margin: 0.5rem;
+}
+.titwind .titthree .closeimg {
+  position: absolute;
+  right: -0.2rem;
+  top: -0.3rem;
+  font-size: 0.6rem;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0;
+}
+.titwind .titthree .tip {
+  font-size: 0.26rem;
+  line-height: 0.6rem;
+  color: #000;
+}
+.titwind .titthree .titcomsure {
+  background-color: #232c31;
+  color: #fff!important;
+}
+@keyframes mysnow {
+  0% {
+    bottom: 100%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+    bottom: -10%;
+  }
+}
+@-webkit-keyframes mysnow {
+  0% {
+    bottom: 100%;
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+    bottom: -10%;
+  }
+}
+@-moz-keyframes mysnow {
+  0% {
+    bottom: 100%;
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-30deg);
+    bottom: -10%;
+  }
+}
+@-ms-keyframes mysnow {
+  0% {
+    bottom: 100%;
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(-30deg);
+    bottom: -10%;
+  }
+}
+@-o-keyframes mysnow {
+  0% {
+    bottom: 100%;
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(-30deg);
+    bottom: -10%;
+  }
+}
+.roll5 {
+  position: absolute;
+  animation: mysnow 20s linear;
+  -webkit-animation: mysnow 20s  linear;
+  -moz-animation: mysnow 20s linear;
+  -ms-animation: mysnow 20s linear;
+  -o-animation: mysnow 20s linear;
+}
+.roll4 {
+  position: absolute;
+  animation: mysnow 12s linear;
+  -webkit-animation: mysnow 12s linear;
+  -moz-animation: mysnow 12s linear;
+  -ms-animation: mysnow 12s linear;
+  -o-animation: mysnow 12s linear;
+}
+.roll3 {
+  position: absolute;
+  animation: mysnow 8s ease-out;
+  -webkit-animation: mysnow 8s ease-out;
+  -moz-animation: mysnow 8s ease-out;
+  -ms-animation: mysnow 8s ease-out;
+  -o-animation: mysnow 8s ease-out;
+}
+.roll3 {
+  position: absolute;
+  animation: mysnow 5s ease-out;
+  -webkit-animation: mysnow 5s ease-out;
+  -moz-animation: mysnow 5s ease-out;
+  -ms-animation: mysnow 5s ease-out;
+  -o-animation: mysnow 5s ease-out;
+}
+.roll {
+  position: fixed;
+  z-index: 9999999;
+}
+.myconfirm {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.myconfirm .myconfirmin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 65%;
+  height: 30%;
+  text-align: center;
+  overflow: hidden;
+}
+.myconfirm .myconfirmin h4 {
+  font-size: 0.3rem;
+  padding: 0.3rem 0.2rem 0.5rem;
+  background-color: #fff;
+  border-radius: 0.1rem 0.1rem 0 0;
+}
+.myconfirm .myconfirmin .myout {
+  width: 100%;
+  background-color: #212121;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #fff;
+  border-radius: 0 0 0.1rem 0.1rem ;
+}
+.myconfirm .myconfirmin .myoutin {
+  width: 50%;
+  float: left;
+  font-size: 0.3rem;
+}
+.myconfirm .myconfirmin .myconsole {
+  border-right: 0.01rem solid  #fff;
+}
+.con {
+  display: inline-block;
+  float: left;
+}
+.con .room-number {
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+.con .bd-box {
+  padding: 0 0.1rem;
+  border: 0.01rem solid #efefef;
+  font-size: 0.3rem;
+}
+.con input {
+  width: 0.5rem;
+  text-align: center;
+  font-size: 0.2 rem;
+}

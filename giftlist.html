@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+		<!--引入flexible-->
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入重置css样式-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--引入字体图标-->
+		<link rel="stylesheet" type="text/css" href="css/fonticon/iconfont.css" />
+		<!--引入通用 css-->
+		<link rel="stylesheet" href="css/all.css">
+		<!--引入页面css-->
+		<link rel="stylesheet" href="css/giftlist.css">
+
+		<title></title>
+	</head>
+
+	<body>
+		<div data-role='page'>
+			<div class="top_banner setcolor">
+				<p><i class="iconfont">&#xe628;</i>本技术由秦皇岛恒硕信息技术有限公司本技术由秦皇岛恒硕信息技术有限公司</p>
+			</div>
+			<a href="javascript:;" class="kefu">
+				<i class="iconfont">&#xe666;</i>
+			</a>
+			<!--回顶部-->
+			<div class="back_to_top" style="display: none;">
+				<i class="iconfont">&#xe605;</i>
+			</div>
+			<!--回顶部end-->
+			<!--选手详情顶部-->
+			<div class="ppldetalt">
+				<div class="detalin">
+					<img src="images/vote_litt.png"/>
+					<div class="detalin_b">
+						<p class="pplname">清小扬 <span>12号</span></p>
+						<div class="pplword"><p>个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！个性签名：你若盛开，蝴蝶自来！</p>
+							
+							<div class="cover"></div>
+							<div class="coverr"></div>
+							
+						</div>
+						<ul class="clearfix">
+							<li>
+								<p>1662</p>
+								<p class="poor">当前票</p>
+							</li>
+							<li>
+								<p>1662</p>
+								<p class="poor">排名</p>
+							</li>
+							<li>
+								<p>1662</p> 
+								<p class="poor">距上一名</p>
+							</li>
+							<li>
+								<p>1662</p>
+								<p class="poor">浏览量</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--选手详情顶部end-->
+
+			<!--下方轮播-->
+			<div class="swiperb">
+				<div class="swiperbin">
+					<div class="topint">
+						<h2>票数贡献榜</h2> 
+					</div>
+					<div class="listsin">
+						<ul id="ullists">
+							<li class="clearfix">
+								<img src="images/vote_list.png"/>
+								<h2>清小扬</h2>
+								<p>2018-07-05 11:11:00</p>
+								<span>+150</span>
+							</li>
+							<li class="clearfix">
+								<img src="images/vote_list.png"/>
+								<h2>清小扬</h2>
+								<p>2018-07-05 11:11:00</p>
+								<span>+150</span>
+							</li>
+							<li class="clearfix">
+								<img src="images/vote_list.png"/>
+								<h2>清小扬</h2>
+								<p>2018-07-05 11:11:00</p>
+								<span>+150</span>
+							</li>
+						</ul>
+						<div class="loadmore setcolor">
+							查看更多
+						</div>
+					</div>
+			
+				</div>
+			</div>
+			<!--下方轮播end--> 
+			
+			<!--投票记录-->
+			<!--更多lists-->
+			<div class="lists">
+				
+			</div>
+			<!--更多lists end-->
+			<!--投票记录end-->
+			<!--底部广告-->  
+			<div class="bbann">
+				<div class="bbannin">
+					<img src="images/homebott.png"/>
+				</div>
+			</div>
+			<!--底部广告 end-->
+			
+			
+		</div>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="js/baseCode16.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/utiltool.js" type="text/javascript" charset="utf-8"></script>
+	<!--引入通用js-->
+	<script src="js/all.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			/*点击加载更多按钮*/
+			$(".loadmore").on("touchstart",function(){
+				console.log("111")
+				  loadmore ()
+			})
+			function loadmore () {
+				var html = ""
+				/*ajax请求数据*/
+				var par = {};
+	      par.pageNo = base16Str("1");
+	      par.pageSize = base16Str("10");
+	      zhengzhuan_type()
+		    function zhengzhuan_type() {
+		        var par={};
+		        par.names=base16Str("癌症知识分类");
+		        $.ajax({
+		            type : "post",
+		            url : routeURL.captchaphone,
+		            data : par,
+		            success : function(data){
+		                var data = eval("("+data+")")
+		                if(data.status==0){
+		                    var length = data.list.length;
+		                    var zhishiku_list =  $(".zhishiku_list").children("li");
+		                    for(var i=0;i<length;i++) {
+		                        var CLASSID = data.list[i].CLASSID
+		                        var CLASSNAME = data.list[i].CLASSNAME
+		                        var $_this = $(zhishiku_list[i])
+		                        var $_href = $_this.find("a").attr("href")+'?class='+CLASSID
+		                        $_this.find("a").attr("href",$_href)
+		                        $_this.find("span").text(CLASSNAME)
+		                    }
+		                }
+		            },
+		            error:function(data){
+		            }
+		        });
+		    }
+		  	/*ajax*/
+				for (let i=0;i<9;i++) {
+					let k =i+1
+				html +='<li class="clearfix">'+
+							'<img src="images/vote_list.png"/>'+
+							'<h2>清小扬</h2>'+
+								'<p>2018-07-05 11:11:00</p>'+
+								'<span>+150</span>'+
+					   	'</li>'
+				}
+					$("#ullists").append(html);
+			}
+		
+/*点击加载更多按钮*/
+/*个性签名滚动*/
+			var top_bann_left = parseInt($(".pplword p").css("left"))
+			var vw = parseInt($(".pplword p").width()) 
+			var fonew = parseInt($(window).width()) 
+			setInterval(function() {
+				//console.log(top_bann_left)
+				$(".pplword p").css("left", top_bann_left--)
+				if(top_bann_left < -vw) {
+					top_bann_left = fonew
+				}
+			}, 10)
+/*个性签名滚动*/
+
+		})
+	</script>
+
+</html>

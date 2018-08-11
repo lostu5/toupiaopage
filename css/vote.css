@@ -1,0 +1,156 @@
+.top3 {
+  padding: 0.3rem 0.2rem;
+}
+.top3 .topin {
+  width: 100%;
+}
+.top3 .topin .topin_t {
+  height: 0.88rem;
+  position: relative;
+}
+.top3 .topin .topin_t img {
+  width: 100%;
+  height: 100%;
+}
+.top3 .topin .topin_t h2 {
+  line-height: 0.88rem;
+  padding-left: 0.2rem;
+  font-size: 0.36rem;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  text-align: center;
+  letter-spacing: 0.01rem;
+}
+.top3 .topin .topin_m {
+  width: 100%;
+  padding: 0 0.2rem;
+  background-color: #fff;
+}
+.top3 .topin .topin_m ul {
+  width: 100%;
+}
+.top3 .topin .topin_m ul li {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+.top3 .topin .topin_m ul li h2 {
+  font-size: 0.24rem;
+  font-weight: normal;
+  padding-top: 1rem;
+  color: #fdb40a;
+}
+.top3 .topin .topin_m ul li .topone {
+  padding-top: 0.4rem;
+}
+.top3 .topin .topin_m ul li .topone img {
+  width: 1.52rem;
+}
+.top3 .topin .topin_m ul li .topimg {
+  padding: 0.2rem 0 0.4rem;
+}
+.top3 .topin .topin_m ul li .topimg img {
+  width: 1.42rem;
+  height: 1.42rem;
+}
+.top3 .topin .topin_m ul li .toponeimg {
+  padding: 0rem 0 0.3rem;
+}
+.top3 .topin .topin_m ul li .toponeimg img {
+  width: 1.72rem;
+  height: 1.72rem;
+  border-radius: 50%;
+  box-shadow: 0 0  0.2rem 0.1rem #ffd822;
+}
+.top3 .topin .topin_m ul li h3 {
+  font-size: 0.3rem;
+  font-weight: normal;
+  color: #6f6f6f;
+}
+.top3 .topin .topin_m ul li .toponename {
+  font-size: 0.36rem;
+  color: #444;
+}
+.top3 .topin .topin_m ul li p {
+  font-size: 0.3rem;
+  font-weight: normal;
+  line-height: 1rem;
+  color: #f66634;
+}
+.top3 .topin .topin_b {
+  padding: 0 0.2rem;
+  color: #fff;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.24rem;
+  border-radius: 0 0 0.05rem 0.05rem;
+}
+.top3 .topin .topin_b .topin_btim {
+  width: 50%;
+  float: left;
+}
+.top3 .topin .topin_b .topin_btim span {
+  float: right;
+  color: #fff;
+}
+.top3 .topin .topin_b .topin_btime {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.lists {
+  width: 100%;
+  margin-top: 0.1rem;
+  margin-bottom: 1.5rem;
+  padding: 0 0.2rem;
+}
+.lists .listsin {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 0.2rem;
+}
+.lists .listsin ul {
+  width: 100%;
+}
+.lists .listsin ul li {
+  width: 100%;
+  padding: 0.3rem 0rem;
+  position: relative;
+  border-bottom: 1px solid #dcdcdc;
+}
+.lists .listsin ul li img {
+  float: left;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0 0.2rem;
+}
+.lists .listsin ul li h2 {
+  line-height: 0.7rem;
+  font-size: 0.3rem;
+  letter-spacing: 0.01rem;
+}
+.lists .listsin ul li p {
+  font-size: 0.24rem;
+  letter-spacing: 0.01rem;
+}
+.lists .listsin ul li span {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.3rem;
+  font-size: 0.3rem;
+}
+.lists .listsin .loadmore {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.36rem;
+  letter-spacing: 0..01rem;
+  margin-top: 0.4rem;
+  border-radius: 0.06rem;
+}

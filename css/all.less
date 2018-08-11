@@ -1,0 +1,227 @@
+//色系
+.setcolor {
+    background-color: #232c31;
+}
+//色系end
+//客服
+.kefu {
+    position: fixed;
+    top: 0.8rem;
+    right: 0.2rem;
+    z-index: 999;
+    padding: 0.1rem;
+    transition: top 0.5s;
+    i {
+        font-size: 0.42rem;
+    }
+}
+//客服end
+//回顶部
+.back_to_top{
+    position: fixed;
+    bottom:1.3rem;
+    right: 0.3rem;
+    background-color: rgba(0,0,0,0);
+    z-index: 999;
+    i {
+        font-size: 0.5rem;
+    }
+}
+//回顶部end
+//顶部广告
+.top_banner {
+    height: 0.6rem;
+    color: #fff;
+    line-height: 0.60rem;
+    overflow: hidden;
+    position: relative;
+    .iconfont {
+        font-size: 0.30rem;
+        margin-right: 0.1rem;
+    }
+    p {
+        font-size: 0.30rem;
+        position: absolute;
+        top: 0;;
+        left: 100%;
+        white-space:nowrap;
+    }
+}
+ //顶部广告end
+
+//底部导航
+.footernav {
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    ul {
+        height: 100%;
+        width: 100%;
+        li {
+            height:100%;
+            width: 25%;
+            a {
+                height:100%;
+                width: 100%;
+            }
+            float: left;
+            text-align: center;
+            .icon {
+                width: 0.40rem;
+                height: 0.5rem;
+                margin: auto auto;
+                padding-top: 0.1rem;
+                img{
+                    width: 100%;
+                    height: auto;
+                    max-height: 100%;
+                }
+            }
+            .iconw {
+                line-height: 0.5rem;
+                font-size: 0.3rem;
+                color: #fff;
+            }
+        }
+    }
+}
+//底部导航end
+.ui-navbar li .ui-btn .ui-btn-inner {
+    padding: 0;
+}
+
+//loading
+    .divloading{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+        
+    }
+    .loadEffect{
+        width: 1rem;
+        height: 1rem;
+        position: relative;
+        top: 30%;
+        left: 0%;
+        right: 0;
+        margin:auto;
+    }
+    .loadEffect span{
+        display: inline-block;
+        width: 0.16rem;
+        height: 0.16rem;
+        border-radius: 50%;
+        background: lightgreen;
+        position: absolute;
+        animation: load 1.04s ease infinite;
+        -webkit-animation: load 1.04s ease infinite;
+    }
+    @-webkit-keyframes load{
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0.2;
+        }
+    }
+    .loadEffect span:nth-child(1){
+        left: 0;
+        top: 50%;
+        margin-top:-0.08rem;
+        animation-delay:0.13s;
+        -webkit-animation-delay:0.13s;
+    }
+    .loadEffect span:nth-child(2){
+        left: 0.14rem;
+        top: 0.14rem;
+        animation-delay:0.26s;
+        -webkit-animation-delay:0.26s;
+    }
+    .loadEffect span:nth-child(3){
+        left: 50%;
+        top: 0;
+        margin-left: -0.08rem;
+        animation-delay:0.39s;
+        -webkit-animation-delay:0.39s;
+    }
+    .loadEffect span:nth-child(4){
+        top: 0.14rem;
+        right:0.14rem;
+        animation-delay:0.52s;
+        -webkit-animation-delay:0.52s;
+    }
+    .loadEffect span:nth-child(5){
+        right: 0;
+        top: 50%;
+        margin-top:-0.08rem;
+        animation-delay:0.65s;
+        -webkit-animation-delay:0.65s;
+    }
+    .loadEffect span:nth-child(6){
+        right: 0.14rem;
+        bottom:0.14rem;
+        animation-delay:0.78s;
+        -webkit-animation-delay:0.78s;
+    }
+    .loadEffect span:nth-child(7){
+        bottom: 0;
+        left: 50%;
+        margin-left: -0.08rem;
+        animation-delay:0.91s;
+        -webkit-animation-delay:0.91s;
+    }
+    .loadEffect span:nth-child(8){
+        bottom:0.14rem;
+        left: 0.14rem;
+        animation-delay:1.04s;
+        -webkit-animation-delay:1.04s;
+    }
+//loading end
+//音乐
+#alert_sound {
+    right: auto;
+    left: 0.4rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url(data:image/png;base64,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) no-repeat center center;
+    background-size: contain;
+
+}
+.rotates {
+    animation-name: mysecend;  /*名称*/
+    animation-duration: 3s;    /*时间*/
+    animation-timing-function: linear;  /*规定动画的速度曲线*/
+    animation-delay: 0;   /*延迟*/
+    animation-iteration-count: infinite;  /*播放的次数*/
+    animation-direction: normal;  /*下一周期逆向地播放*/
+    animation-play-state: running;
+    /* Safari 与 Chrome: */
+    -webkit-animation-name: mysecend;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    }
+/*旋转动画*/
+@keyframes mysecend
+{0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}}
+
+@-moz-keyframes mysecend /* Firefox */
+{0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}}
+
+@-webkit-keyframes mysecend /* Safari 和 Chrome */
+{0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}}
+
+@-o-keyframes mysecend /* Opera */
+{0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}}
